@@ -35,7 +35,7 @@ jobs:
         username: ${{ secrets.VPS_USER }}
         port: ${{secrets.VPS_PORT}}
         script: |
-          cd ~/home/${{ secrets.VPS_USER }}/my-porto-be
+          cd ./my-porto-be
           git pull origin dev
           git status
           npm install
