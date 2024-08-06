@@ -28,7 +28,7 @@ jobs:
     #  run: npm test
 
     - name: Deploy to VPS
-      uses: appleboy/ssh-action@dev
+      uses: appleboy/ssh-action@master
       with:
         key: ${{ secrets.VPS_PRIVATE }}
         host: ${{ secrets.VPS_IP }}
