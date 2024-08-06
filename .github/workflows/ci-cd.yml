@@ -30,7 +30,7 @@ jobs:
     - name: Deploy to VPS
       uses: appleboy/ssh-action@master
       with:
-        key: ${{ secrets.VPS_PRIVATE }}
+        key: ${{ secrets.VPS_SECRET }}
         host: ${{ secrets.VPS_IP }}
         username: ${{ secrets.VPS_USER }}
         port: ${{secrets.VPS_PORT}}
